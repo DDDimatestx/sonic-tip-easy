@@ -6,7 +6,7 @@ import { Coins, Zap, Users, Gift } from 'lucide-react';
 import heroImage from '@/assets/tip-jar-hero.jpg';
 
 // Demo contract address - in production, this would be deployed
-const DEMO_CONTRACT = "0x1234567890123456789012345678901234567890";
+const DEMO_CONTRACT = "0xE8B5151886BDd27f65F64a836D7E1e01Eb145a79";
 
 const Index = () => {
   const navigate = useNavigate();
