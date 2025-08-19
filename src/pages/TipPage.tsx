@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Home, ExternalLink } from 'lucide-react';
 
 // Demo contract address - in production, this would be deployed
-const DEMO_CONTRACT = "0x1234567890123456789012345678901234567890";
+const DEMO_CONTRACT = "0xE8B5151886BDd27f65F64a836D7E1e01Eb145a79";
 
 const TipPage = () => {
   const { address } = useParams<{ address: string }>();
