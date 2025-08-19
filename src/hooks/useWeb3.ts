@@ -3,7 +3,7 @@ import { BrowserProvider, Contract, formatEther, parseEther } from 'ethers';
 
 // Sonic Testnet configuration
 const SONIC_TESTNET = {
-  chainId: '0xFAA5', // 64165 in hex
+  chainId: '0x3909', // 14601 in hex
   chainName: 'Sonic Testnet',
   nativeCurrency: {
     name: 'Sonic',
