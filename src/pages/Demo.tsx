@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Home, Info } from 'lucide-react';
 
 // Demo contract and recipient addresses
-const DEMO_CONTRACT = "0x1234567890123456789012345678901234567890";
-const DEMO_RECIPIENT = "0x742d35Cc6475C6E7CC4D5A2cb3e572b07C8C7373";
+const DEMO_CONTRACT = "0xE8B5151886BDd27f65F64a836D7E1e01Eb145a79";
+const DEMO_RECIPIENT = "0x3b10B652F6176c8A88777333E9Dc014Ed74E05AD";
 
 const Demo = () => {
   const navigate = useNavigate();
