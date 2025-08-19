@@ -42,7 +42,7 @@ export const useWeb3 = () => {
   const checkNetwork = useCallback(async (provider: BrowserProvider) => {
     try {
       const network = await provider.getNetwork();
-      return network.chainId === BigInt(64165); // Sonic Testnet
+      return network.chainId === BigInt(14601); // Sonic Testnet
     } catch (error) {
       console.error('Network check failed:', error);
       return false;
