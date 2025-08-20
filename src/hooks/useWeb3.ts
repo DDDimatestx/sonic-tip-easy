@@ -160,6 +160,24 @@ export const useWeb3 = () => {
     }
   }, [provider]);
 
+  // Check for already connected accounts on page load
+  useEffect(() => {
+    const checkExistingConnection = async () => {
+      if (window.ethereum) {
+        try {
+          const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+          if (accounts.length > 0) {
+            await connectWallet();
+          }
+        } catch (error) {
+          console.error('Failed to check existing connection:', error);
+        }
+      }
+    };
+
+    checkExistingConnection();
+  }, [connectWallet]);
+
   useEffect(() => {
     if (window.ethereum) {
       const handleAccountsChanged = (accounts: string[]) => {
